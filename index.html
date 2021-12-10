@@ -13,7 +13,7 @@
       const canvas = document.querySelector("canvas");
       const ctx = canvas.getContext("2d");
       const skelly = new Image();
-      skelly.src = "assets/mario.png";
+      skelly.src = "assets/ryu.png";
 
       skelly.addEventListener("load", terminouDeCarregar);
 
@@ -24,7 +24,7 @@
 
       let l = 0;
       let c = 0;
-      let pose = 5;
+      let pose = 2;
       let quadro = 0;
       const POSES = [
         { qmax: 9, pv: 6 },
@@ -66,7 +66,7 @@
         ctx.drawImage(
           skelly,
           //sx, sy, sw, sh
-          Math.floor(quadro)*40, pose*39, 39, 39,
+          Math.floor(quadro)*60, pose*101, 101, 101,
             //dx, dy, dw, dh
                0, 0, 80, 80
         );
